@@ -19,8 +19,7 @@ class FilterForm extends Component {
                                     className="form-control"
                                     placeholder="Search..."
                                     autoComplete="off"
-                                    pattern="^[a-zA-Z0-9_]{1,}(\s+[a-zA-Z0-9_])*$"
-                                    // [a-zA-Z0-9_]+(\s[a-zA-Z0-9_])
+                                    pattern="^[a-zA-Z0-9_]{1,}(\s[a-zA-Z0-9_]{0,})*$"
                                     required={true}
                                     onChange={this.props.onChange} />
                             </div>
